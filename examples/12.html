@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6주차 예제 12 · 반드시 한 세트로 씁니다</title>
+  <style>
+    /*
+    6주차 예제 12 — 반드시 한 세트로 씁니다
+    */
+    p, li, td {
+      word-break: keep-all;        /* 어절(단어) 중간에서 끊지 않는다 */
+      overflow-wrap: break-word;   /* 단, 공백 없는 긴 URL은 예외로 꺾는다 */
+    }
+
+    /* ❌ word-break: break-word; 하나만 쓰면
+       "한신대학교웹프로그
+        래밍" 처럼 낱말 중간이 끊깁니다. */
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6주차 예제 8 · 어떤 속성은 자식에게 물려집니다</title>
+  <style>
+    /*
+    6주차 예제 8 — 어떤 속성은 자식에게 물려집니다
+    */
+    body {
+      color: #333;          /* 상속됨 — 안의 모든 글자가 이 색 */
+      font-family: sans-serif;  /* 상속됨 */
+      line-height: 1.7;     /* 상속됨 */
+      border: 1px solid;    /* 상속 안 됨 — 테두리는 물려주지 않는다 */
+    }
+
+    /* 글자 관련 속성(color, font-*, line-height, text-align)은 대체로 상속됩니다.
+       상자 관련 속성(margin, padding, border, background)은 상속되지 않습니다. */
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>

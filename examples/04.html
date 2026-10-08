@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6주차 예제 4 · 관계로 고르기</title>
+  <style>
+    /*
+    6주차 예제 4 — 관계로 고르기
+    */
+    .card p        { }   /* 자손 — .card 안 어디든 있는 p */
+    .card > p      { }   /* 자식 — .card 바로 아래 p만 */
+    h2 + p         { }   /* 인접 형제 — h2 바로 다음에 오는 p 하나 */
+    h2 ~ p         { }   /* 이후 형제 — h2 다음에 오는 모든 형제 p */
+
+    h1, h2, h3     { }   /* 목록 — 셋 다에 적용 (쉼표) */
+
+    p.note         { }   /* 컴파운드 — p이면서 class="note"인 것 (붙여 씀) */
+    .a.b           { }   /* class에 a와 b가 둘 다 있는 것 */
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>

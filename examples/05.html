@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6주차 예제 5 · 자주 쓰는 가상 클래스</title>
+  <style>
+    /*
+    6주차 예제 5 — 자주 쓰는 가상 클래스
+    */
+    a:hover        { color: red; }        /* 마우스를 올렸을 때 */
+    a:focus        { outline: 2px solid; } /* 키보드로 초점이 왔을 때 */
+    button:active  { transform: scale(.97); } /* 누르고 있는 동안 */
+    input:disabled { background: #eee; }   /* 비활성 상태 */
+    input:checked  { }                     /* 체크된 상태 */
+
+    li:first-child { }                     /* 첫째 */
+    li:last-child  { border: none; }       /* 막내 — 마지막 구분선 없애기에 자주 씀 */
+    li:nth-child(2n)  { background: #f5f5f5; } /* 짝수번째 — 줄무늬 표 */
+
+    .item:not(.active) { opacity: .6; }    /* active가 "없는" 것 */
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>

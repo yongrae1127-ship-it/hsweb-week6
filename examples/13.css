@@ -1,0 +1,14 @@
+/*
+6주차 예제 13 — 나머지 자주 쓰는 것들
+*/
+
+/* ⚠ 이 파일은 **속성 참고**입니다. 이대로는 화면에 아무 일도 일어나지 않습니다.
+   아래 선언을 선택자 안에 넣어야 적용됩니다 —  .box { padding: 20px; }
+   여러 줄이 같은 속성을 반복한다면 "이렇게도 쓸 수 있다" 는 뜻입니다. */
+
+text-align: center;              /* left | center | right | justify */
+text-decoration: none;           /* 링크 밑줄 없애기 */
+text-transform: uppercase;       /* 영문 대문자로 */
+white-space: pre-line;           /* 소스의 줄바꿈을 화면에 반영 */
+opacity: 0.6;                    /* 투명도 */
+cursor: pointer;                 /* 마우스 커서를 손가락으로 */

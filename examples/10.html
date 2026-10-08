@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6주차 예제 10 · font 관련 속성</title>
+  <style>
+    /*
+    6주차 예제 10 — font 관련 속성
+    */
+    body {
+      font-family: 'Noto Sans KR', -apple-system, 'Malgun Gothic', sans-serif;
+      /*            ①              ②              ③               ④
+         ① 원하는 글꼴 ② 시스템 기본 ③ 없으면 대안 ④ 최후의 보루(종류)
+         앞에서부터 있는 것을 찾아 씁니다 — "폰트 스택"이라고 부릅니다. */
+
+      font-size: 16px;      /* 본문은 16px 아래로 내리지 않습니다 */
+      font-weight: 400;     /* 100~900. 400=보통, 700=굵게 */
+      line-height: 1.7;     /* 단위 없이 쓰는 게 좋습니다 (글자 크기의 배수) */
+      letter-spacing: -0.01em;
+    }
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>
